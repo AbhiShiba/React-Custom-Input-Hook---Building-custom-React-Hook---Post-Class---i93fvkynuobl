@@ -12,9 +12,6 @@ const useInput = (initialValue) => {
         value,
         onChange : (e) => {
             setValue(e.target.value);
-        },
-        reset : () => {
-            setValue(initialValue);
         }
     }
 
