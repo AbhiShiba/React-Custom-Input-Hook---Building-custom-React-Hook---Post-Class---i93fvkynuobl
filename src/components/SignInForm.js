@@ -3,8 +3,10 @@ import styled from "styled-components";
 const SignInForm = ({ email, password }) => {
   const submitForm = (event) => {
     event.preventDefault();
+    email.reset();
+    password.reset();
   };
-
+ 
   return (
     <FormWrapper onSubmit={submitForm}>
       <Title>Sign in</Title>
